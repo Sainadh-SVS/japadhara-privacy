@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Japadhara (జపధార)</title>
+  <style>
+    :root {
+      --primary: #D97706;
+      --primary-dark: #B45309;
+      --text: #1F2937;
+      --text-muted: #6B7280;
+      --bg: #FDFBF7;
+      --card-bg: #FFFFFF;
+      --border: #FDE68A;
+      --terracotta: #78350F;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      padding: 32px 16px;
+    }
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      padding: 40px 32px;
+      border-radius: 20px;
+      border: 1px solid var(--border);
+      box-shadow: 0 10px 25px -5px rgba(120, 53, 15, 0.07);
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 36px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid #F3F4F6;
+    }
+    .om-badge {
+      display: inline-block;
+      font-size: 32px;
+      color: var(--primary);
+      margin-bottom: 8px;
+    }
+    h1 {
+      font-size: 28px;
+      color: var(--terracotta);
+      margin-bottom: 6px;
+    }
+    .subtitle {
+      color: var(--text-muted);
+      font-size: 14px;
+    }
+    h2 {
+      font-size: 18px;
+      color: var(--terracotta);
+      margin-top: 28px;
+      margin-bottom: 10px;
+    }
+    p {
+      margin-bottom: 14px;
+      font-size: 15px;
+      color: #374151;
+    }
+    ul {
+      margin-left: 20px;
+      margin-bottom: 14px;
+      color: #374151;
+      font-size: 15px;
+    }
+    li {
+      margin-bottom: 6px;
+    }
+    .highlight-box {
+      background: #FFFBEB;
+      border-left: 4px solid var(--primary);
+      padding: 16px 20px;
+      border-radius: 8px;
+      margin: 20px 0;
+      font-size: 14px;
+    }
+    .highlight-box strong {
+      color: var(--terracotta);
+    }
+    .footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #F3F4F6;
+      font-size: 13px;
+      color: var(--text-muted);
+      text-align: center;
+    }
+    a {
+      color: var(--primary-dark);
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="om-badge">ॐ</div>
+      <h1>Privacy Policy for Japadhara</h1>
+      <p class="subtitle"><strong>App:</strong> Japadhara (జపధార - Devotional Chant Tracker) &bull; <strong>Effective Date:</strong> September 18, 2026</p>
+    </div>
+
+    <h2>1. Introduction & Overview</h2>
+    <p>
+      <strong>Japadhara</strong> is a devotional chant tracker created to help spiritual practitioners record and track their sacred mantra chants. 
+      We place the highest value on your spiritual privacy and personal data. Japadhara is built on an <strong>offline-first, privacy-by-design</strong> architecture:
+      we do not run any central servers, we do not require account creation on our own systems, and we never collect, track, monetize, or sell your personal information.
+    </p>
+
+    <h2>2. Data Collection and Usage</h2>
+    <p><strong>Locally Stored Data:</strong></p>
+    <ul>
+      <li><strong>Chant Records:</strong> Timestamp, chant count, and optional notes you write.</li>
+      <li><strong>App Preferences:</strong> Daily chant goal, starting baseline count, mantra text, language choice, and preset mode.</li>
+    </ul>
+    <p>
+      All your chant logs and preferences are stored <strong>strictly on your local device</strong> (using encrypted/private local app storage). 
+      If you choose not to connect Google Drive, no data ever leaves your phone.
+    </p>
+
+    <h2>3. Google Drive Integration & Scopes</h2>
+    <p>
+      Japadhara offers an optional cloud backup and synchronization feature powered by Google Drive. 
+      If you explicitly choose to connect your Google Account:
+    </p>
+    <ul>
+      <li>
+        <strong>Scope Requested:</strong> <code>https://www.googleapis.com/auth/drive.file</code> (Per-file access).
+      </li>
+      <li>
+        <strong>Strictly Limited Access:</strong> The app <strong>only</strong> accesses files and folders that <em>it creates itself</em> (a folder named <code>Japadhara</code>). 
+        The app <strong>cannot view, read, modify, or delete</strong> any other files, photos, documents, or spreadsheets in your personal Google Drive.
+      </li>
+      <li>
+        <strong>Files Created:</strong> Japadhara creates two files in your private <code>Japadhara</code> folder:
+        <ul>
+          <li><code>japadhara_backup.json</code> (A lossless snapshot for backup and multi-device restore)</li>
+          <li><code>japadhara_chants.csv</code> (A clean spreadsheet view for opening in Google Sheets / Excel)</li>
+        </ul>
+      </li>
+      <li>
+        <strong>Direct Transmission:</strong> Communication occurs exclusively between your device and Google's official API servers over secure HTTPS (TLS). 
+        Your Google Drive data is never routed through or stored on any intermediary or developer server.
+      </li>
+    </ul>
+
+    <div class="highlight-box">
+      <strong>Google API Limited Use Disclosure:</strong><br>
+      Japadhara's use and transfer of information received from Google APIs to any other app will adhere to the 
+      <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google API Services User Data Policy</a>, 
+      including the Limited Use requirements.
+    </div>
+
+    <h2>4. Analytics, Tracking & Third-Party Advertising</h2>
+    <ul>
+      <li>Japadhara contains <strong>no third-party advertisements</strong>.</li>
+      <li>Japadhara contains <strong>no third-party tracking scripts or user profiling SDKs</strong>.</li>
+      <li>We do not sell, rent, or trade any user information to data brokers or advertising networks.</li>
+    </ul>
+
+    <h2>5. Data Retention & Deletion</h2>
+    <ul>
+      <li><strong>Local Data:</strong> You can delete any individual chant entry at any time in the app. Uninstalling the app completely removes all local app storage from your device.</li>
+      <li><strong>Google Drive Data:</strong> You can delete the <code>Japadhara</code> folder and its contents directly from your Google Drive at any time, or disconnect Google Drive anytime via the app's Settings screen.</li>
+    </ul>
+
+    <h2>6. Children's Privacy</h2>
+    <p>
+      Japadhara does not knowingly collect or solicit any personal information from children under the age of 13. The app is completely safe for devotees and practitioners of all ages.
+    </p>
+
+    <h2>7. Changes to This Privacy Policy</h2>
+    <p>
+      We may occasionally update this Privacy Policy. Any updates will be reflected with a revised "Effective Date" at the top of this page.
+    </p>
+
+    <h2>8. Contact Information</h2>
+    <p>
+      If you have any questions or suggestions regarding this Privacy Policy or Japadhara, please contact us:
+    </p>
+    <ul>
+      <li><strong>App:</strong> Japadhara</li>
+      <li><strong>Developer Contact:</strong> <a href="mailto:sai.vessapps@gmail.com">sai.vessapps@gmail.com</a></li>
+    </ul>
+
+    <div class="footer">
+      &copy; 2026 Japadhara. All rights reserved. &bull; ॐ శాంతిః శాంతిః శాంతిః
+    </div>
+  </div>
+</body>
+</html>
